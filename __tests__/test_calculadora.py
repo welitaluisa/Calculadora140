@@ -59,4 +59,18 @@ def test_multiplicar_dois_numeros():
 
     # Assert / Valida
 
-    assert resultado_esperado == resultado_obtido    
+    assert resultado_esperado == resultado_obtido
+
+def test_dividir_por_zero():
+
+    num1 = 8
+    num2 = 0 
+    resultado_esperado = 'Erro: Não é possivel dividir por zero'
+
+    # Act / Executa
+    resultado_obtido = dividir_dois_numeros(num1, num2)
+
+    # Assert / Valida
+
+    assert resultado_esperado == resultado_obtido
+
